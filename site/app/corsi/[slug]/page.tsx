@@ -199,7 +199,7 @@ export default async function CoursePage({ params }: Props) {
                 lorem@ipsum.dolor
               </p>
               <a className="btn btn-dark" href="#contatti">
-                Contattaci
+                Lorem ipsum
               </a>
             </div>
             <div className="sede-map catalog-placeholder" role="img" aria-label="Mappa schematica della sede" />

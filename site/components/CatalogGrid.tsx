@@ -84,7 +84,14 @@ export function CatalogGrid() {
       ) : null}
 
       <nav className="catalog-pagination" aria-label="Paginazione">
-        <span className="page-btn is-disabled">← Precedente</span>
+        <span className="page-btn is-disabled" aria-disabled="true" aria-label="Pagina precedente">
+          <span className="page-btn-full" aria-hidden="true">
+            ← Precedente
+          </span>
+          <span className="page-btn-icon" aria-hidden="true">
+            ←
+          </span>
+        </span>
         <div className="page-nums">
           <span className="page-num is-current" aria-current="page">
             1
@@ -95,7 +102,14 @@ export function CatalogGrid() {
           <span className="page-num">…</span>
           <span className="page-num">5</span>
         </div>
-        <span className="page-btn">Successiva →</span>
+        <span className="page-btn" aria-label="Pagina successiva">
+          <span className="page-btn-full" aria-hidden="true">
+            Successiva →
+          </span>
+          <span className="page-btn-icon" aria-hidden="true">
+            →
+          </span>
+        </span>
       </nav>
     </>
   );
