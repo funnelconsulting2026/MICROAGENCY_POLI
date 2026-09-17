@@ -11,7 +11,7 @@ export function Courses() {
         {courses.map((course, index) => (
           <article
             className={`course-card${index >= 3 ? " course-desktop-only" : ""}`}
-            key={course.title}
+            key={course.slug}
           >
             <div className="course-image">
               <img src={course.image} alt={`Immagine illustrativa per ${course.title}`} />
@@ -25,14 +25,14 @@ export function Courses() {
               <h3>{course.title}</h3>
               <p className="course-meta">{course.meta}</p>
               <hr className="course-rule" />
-              <a className="course-link" href="#contatti">
+              <a className="course-link" href={`/corsi/${course.slug}`}>
                 Lorem ipsum dolor <span>→</span>
               </a>
             </div>
           </article>
         ))}
       </div>
-      <a className="btn btn-outline btn-block" href="#contatti">
+      <a className="btn btn-outline btn-block" href="/corsi">
         Lorem ipsum dolor sit →
       </a>
     </section>

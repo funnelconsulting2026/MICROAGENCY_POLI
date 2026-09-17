@@ -12,7 +12,7 @@ export function Hero() {
         />
         <div className="hero-ui">
           <div className="header-desktop-in-hero">
-            <a className="brand" href="#top">
+            <a className="brand" href="/">
               Lorem Ipsum Dolor
             </a>
             <nav className="nav-desktop" aria-label="Principale">

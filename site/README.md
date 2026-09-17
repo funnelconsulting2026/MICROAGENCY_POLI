@@ -1,13 +1,25 @@
 # Lorem Ipsum — sito dal template Figma
 
-Sito statico Next.js (App Router) che riproduce i frame desktop e mobile del template. Tutti i testi visibili sono placeholder lorem. I JSON Figma e la cartella `assets/` del repo restano intatti: le immagini usate sono copie in `site/public/images/`.
+Sito Next.js (App Router) che riproduce tre landing del template. Tutti i testi visibili sono placeholder lorem. I JSON Figma e `assets/` restano intatti: le immagini usate sono copie in `site/public/images/`, oppure placeholder neutri se manca il node id.
 
 ## Stack
 
 - Next.js 15 (App Router) + React 19
 - CSS nativo con variabili semantiche
-- Geist (`next/font/google`) per l’UI, Oswald per la wordmark display desktop
-- Breakpoint: `768px` (mobile da `mobile.json`, desktop da `desktop.json`)
+- Geist (`next/font/google`) per l’UI, Oswald per la wordmark display della home
+- Breakpoint: `768px`
+
+## Route
+
+| URL | Pagina | JSON di riferimento |
+|-----|--------|---------------------|
+| `/` | Home | `desktop.json` + `mobile.json` (REST) |
+| `/corsi` | Catalogo schede | `catalogo-corsi-desktop.json` + `catalogo-corsi-mobile.json` (structured-tree) |
+| `/corsi/[slug]` | Dettaglio corso | `corso-specifico-desktop.json` + `corso-specifico-mobile.json` (structured-tree) |
+
+Esempio di dettaglio: `/corsi/lorem-ipsum-dolor`.
+
+Dalla home, le card corsi e le voci di menu/footer sui corsi aprono `/corsi`. Ogni scheda del catalogo apre il dettaglio. Logo e breadcrumb tornano a home o catalogo.
 
 ## Avvio locale
 
@@ -18,7 +30,7 @@ npm install
 npm run dev
 ```
 
-Apri [http://localhost:3000](http://localhost:3000). Verifica i due formati a **390px** e **1416px**.
+Apri [http://localhost:3000](http://localhost:3000). Verifica i due formati a **390px** e **1416px**, poi `/corsi` e un dettaglio.
 
 ## Build
 
@@ -56,8 +68,8 @@ npx vercel
 
 ## Palette (variabili)
 
-Definite in `app/globals.css`: `--color-text`, `--color-surface`, `--color-accent`, `--color-brand`, `--color-brand-deep`, `--color-text-muted`, `--color-border`, ecc. I valori Figma 0–1 sono convertiti in hex e i colori quasi identici sono unificati.
+Definite in `app/globals.css`: `--color-text`, `--color-surface`, `--color-accent`, `--color-brand`, `--color-brand-deep`, `--color-text-muted`, `--color-border`, ecc.
 
-## Sezioni
+## Placeholder immagini
 
-Header, Hero, Mission e benefici, Banner CTA, Corsi, CFU, Risultati, Lead generation, Sede, FAQ, Footer — nello stesso ordine su entrambi i breakpoint.
+Le schede del catalogo e alcuni media dei nuovi frame non hanno file in `assets/` (node id 232/252/253/254). Lì si usano blocchi neutri (`catalog-placeholder`) con le stesse proporzioni del media Figma (es. 180px, radius 16). Nessuna foto esterna.

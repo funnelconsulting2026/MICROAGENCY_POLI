@@ -1,3 +1,14 @@
+export function StarIcon() {
+  return (
+    <svg className="star-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+      <path
+        fill="currentColor"
+        d="M8 1.2 9.9 5.1l4.3.4-3.3 2.8.9 4.2L8 10.4 4.2 12.5l.9-4.2L1.8 5.5l4.3-.4L8 1.2z"
+      />
+    </svg>
+  );
+}
+
 export function WhatsAppIcon() {
   return (
     <svg className="wa-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">

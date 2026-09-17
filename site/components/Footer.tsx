@@ -9,9 +9,9 @@ export function Footer() {
           </p>
         </div>
         <nav className="footer-links" aria-label="Piè di pagina">
-          <a href="#corsi">Lorem</a>
-          <a href="#corsi">Ipsum dolor sit</a>
-          <a href="#corsi">Amet elit</a>
+          <a href="/corsi">Lorem</a>
+          <a href="/corsi">Ipsum dolor sit</a>
+          <a href="/corsi">Amet elit</a>
           <a href="#servizi">Consectetur adipiscing</a>
           <a href="#faq">Adipiscing</a>
           <a href="#cfu">Elit sed eiusmod</a>
@@ -20,8 +20,8 @@ export function Footer() {
         <div className="footer-cols">
           <div className="footer-col">
             <h3>Lorem</h3>
-            <a href="#corsi">Ipsum dolor sit</a>
-            <a href="#corsi">Amet elit</a>
+            <a href="/corsi">Ipsum dolor sit</a>
+            <a href="/corsi">Amet elit</a>
             <a href="#servizi">Consectetur elit</a>
             <a href="#certificazioni">Adipiscing</a>
           </div>
