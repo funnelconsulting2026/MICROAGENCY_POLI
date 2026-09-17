@@ -2473,6 +2473,12 @@ button {
     padding: 0 80px 80px;
   }
 
+  .course-sede .sede-map {
+    display: block;
+    height: 368px;
+    min-height: 368px;
+  }
+
   .inner-footer .footer-tagline {
     white-space: pre-line;
   }
