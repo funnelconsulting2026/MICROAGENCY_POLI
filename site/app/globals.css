@@ -257,11 +257,35 @@ button {
   color: var(--color-brand-link);
   font-size: 15px;
   font-weight: 500;
-  line-height: 22px;
+  line-height: 1.4;
 }
 
 .link-arrow:hover {
   text-decoration: underline;
+}
+
+.hero-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-cta-primary {
+  background: var(--color-ink);
+  color: var(--color-surface);
+}
+
+.hero-cta-secondary {
+  background: transparent;
+  color: var(--color-text);
+  border: 1px solid var(--color-border-strong);
+}
+
+.hero-cta-row .hero-cta-secondary {
+  display: none;
 }
 
 /* ---------- Hero ---------- */
@@ -280,10 +304,10 @@ button {
 
 .hero-copy h1 {
   margin: 0;
-  font-size: 44px;
+  font-size: 40px;
   font-weight: 500;
-  line-height: 48px;
-  letter-spacing: -0.88px;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
 }
 
 .hero-display {
@@ -310,7 +334,7 @@ button {
   color: var(--color-surface);
   font-size: 11px;
   font-weight: 500;
-  line-height: 16px;
+  line-height: 1.4;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
@@ -319,7 +343,7 @@ button {
   position: relative;
   height: 300px;
   overflow: hidden;
-  background: #8ec5ea;
+  background: var(--color-brand-wash);
 }
 
 .hero-card-image img {
@@ -334,7 +358,7 @@ button {
   color: var(--color-surface);
   font-size: 16px;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 1.45;
 }
 
 .hero-orient {
@@ -350,15 +374,20 @@ button {
 
 .hero-orient h2 {
   margin: 0;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 500;
-  line-height: 32px;
+  line-height: 1.2;
 }
 
 .hero-orient p {
   margin: 0;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 1.5;
+}
+
+.hero-orient .hero-cta-secondary {
+  background: var(--color-surface);
+  color: var(--color-text);
 }
 
 .hero-orient-image {
@@ -1150,9 +1179,9 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    z-index: 1;
+    z-index: 2;
     padding: 36px 56px 48px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0) 28%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.15) 42%);
     color: var(--color-surface);
   }
 
@@ -1203,14 +1232,16 @@ button {
 
   .hero-copy {
     max-width: 640px;
-    gap: 0;
+    gap: 14px;
     color: var(--color-surface);
+    position: relative;
+    z-index: 2;
   }
 
   .hero-copy h1 {
-    font-size: 56px;
-    line-height: 60px;
-    letter-spacing: -1.12px;
+    font-size: 52px;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
     color: var(--color-surface);
   }
 
@@ -1218,38 +1249,50 @@ button {
     display: block;
     margin: 0;
     font-family: var(--font-display);
-    font-size: clamp(96px, 16vw, 238px);
+    font-size: clamp(64px, 8vw, 120px);
     font-weight: 700;
-    line-height: 0.95;
-    letter-spacing: -4px;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
     text-transform: uppercase;
-    color: var(--color-brand);
+    color: var(--color-on-brand-muted);
+    pointer-events: none;
   }
 
   .hero-sub {
-    margin: 12px 0 0;
+    margin: 0;
     max-width: 422px;
-    font-size: 21px;
-    line-height: 32px;
-    letter-spacing: -0.21px;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
     color: var(--color-surface);
+  }
+
+  .hero-cta-row .hero-cta-secondary {
+    display: inline-flex;
+    color: var(--color-surface);
+    border-color: rgba(255, 255, 255, 0.7);
+  }
+
+  .hero-cta-primary {
+    background: var(--color-surface);
+    color: var(--color-brand-deep);
   }
 
   .hero-bottom {
     display: flex;
     align-items: flex-end;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 32px;
-    margin-top: 28px;
+    margin-top: 4px;
   }
 
   .hero-caption-desktop {
     display: block;
-    max-width: 663px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 28px;
+    max-width: 520px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.45;
     color: var(--color-surface);
   }
 
