@@ -5,14 +5,14 @@ export function Location() {
         <div className="sede-copy">
           <h2 id="sede-title">Lorem ipsum</h2>
           <p className="sede-address">
-            Lorem Ipsum Dolor | Sit Amet Elit
+            ECP Milano | Milano
             {"\n"}
-            Via Consectetur 00, 00000 Adipiscing
+            Sede placeholder, Milano
           </p>
           <p className="sede-contact">
-            +39 000 000 0000
+            Preview — nessun recapito attivo
             {"\n"}
-            lorem@ipsum.dolor
+            orientamento@ecp-milano.preview
           </p>
           <a className="btn btn-dark btn-block" href="#contatti">
             Contattaci
@@ -20,13 +20,13 @@ export function Location() {
         </div>
         <div className="sede-map">
           <img
-            src="/images/195_172.png"
+            src="/images/milano/sede-map.png"
             alt="Mappa schematica della zona con indicazione della sede"
           />
         </div>
         <div className="sede-photo-desktop">
           <img
-            src="/images/203_4264.png"
+            src="/images/milano/sede-photo.png"
             alt="Interno luminoso con tavolo di studio e materiali didattici"
           />
         </div>

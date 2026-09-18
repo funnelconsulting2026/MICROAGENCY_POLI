@@ -1,3 +1,5 @@
+@import "../themes/milano.css";
+
 :root {
   --color-surface: #ffffff;
   --color-surface-muted: #f7f8fa;

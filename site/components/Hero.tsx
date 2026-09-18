@@ -7,7 +7,7 @@ export function Hero() {
       <div className="hero-stage">
         <img
           className="hero-bg"
-          src="/images/203_4234.png"
+          src="/images/milano/hero-bg.png"
           alt="Figura di schiena con tocco accademico, sullo sfondo un cielo azzurro"
         />
         <div className="hero-ui">
@@ -65,7 +65,7 @@ export function Hero() {
           <div className="hero-card-bar">Lorem ipsum dolor</div>
           <div className="hero-card-image">
             <img
-              src="/images/192_138.png"
+              src="/images/milano/hero-card.png"
               alt="Laureando di spalle con tocco, parola in evidenza sul cielo"
             />
           </div>
@@ -78,7 +78,7 @@ export function Hero() {
           <h2>Lorem ipsum dolor sit amet elit.</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
           <div className="hero-orient-image">
-            <img src="/images/192_144.png" alt="Mano che solleva un diploma arrotolato" />
+            <img src="/images/milano/hero-orient.png" alt="Mano che solleva un diploma arrotolato" />
           </div>
           <a className="btn btn-whatsapp btn-block" href="https://wa.me/390000000000" rel="noopener noreferrer">
             <WhatsAppIcon />

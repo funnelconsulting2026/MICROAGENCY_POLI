@@ -1,147 +1,123 @@
 export const nav = [
-  { href: "/#mission", label: "Lorem ipsum" },
-  { href: "/#servizi", label: "Dolor sit" },
-  { href: "/corsi", label: "Amet elit sit" },
-  { href: "/#certificazioni", label: "Consectetur" },
-  { href: "/#contatti", label: "Adipiscing" },
+  { href: "/#mission", label: "ECP Milano" },
+  { href: "/#servizi", label: "Sede" },
+  { href: "/corsi", label: "Corsi" },
+  { href: "/#certificazioni", label: "Percorsi" },
+  { href: "/#contatti", label: "Contatti" },
 ] as const;
 
 export const innerNav = [
-  { href: "/", label: "Lorem" },
-  { href: "/#mission", label: "Ipsum sit" },
-  { href: "/#servizi", label: "Dolor" },
-  { href: "/corsi", label: "Amet elit" },
-  { href: "/#certificazioni", label: "Consectetur" },
+  { href: "/", label: "ECP Milano" },
+  { href: "/#mission", label: "Sede" },
+  { href: "/#servizi", label: "Percorsi" },
+  { href: "/corsi", label: "Corsi" },
+  { href: "/#certificazioni", label: "Milano" },
 ] as const;
 
 export const courses = [
   {
-    slug: "lorem-ipsum-dolor",
-    image: "/images/194_132.png",
-    eyebrow: "Lorem ipsum  ·  AA-00",
-    title: "Lorem ipsum dolor sit amet elit",
-    meta: "3 lorem  ·  180 ipsum  ·  Amet",
-    chips: ["Lorem", "Ipsum dolor"],
+    slug: "management-ai",
+    image: "/images/milano/course-management-ai.png",
+    eyebrow: "ECP Milano  ·  Management AI",
+    title: "Management AI",
+    meta: "Percorso  ·  Milano  ·  ECP",
+    chips: ["Management AI", "Milano"],
   },
   {
-    slug: "dolor-sit-amet",
-    image: "/images/194_139.png",
-    eyebrow: "Dolor sit amet  ·  BB-12",
-    title: "Dolor sit amet consectetur",
-    meta: "3 lorem  ·  180 ipsum  ·  Amet",
-    chips: ["Lorem", "Ipsum dolor"],
+    slug: "product-design-ai",
+    image: "/images/milano/course-product-design-ai.png",
+    eyebrow: "ECP Milano  ·  Product Design AI",
+    title: "Product Design AI",
+    meta: "Percorso  ·  Milano  ·  ECP",
+    chips: ["Product Design AI", "Milano"],
   },
   {
-    slug: "amet-elit-sed",
-    image: "/images/194_146.png",
-    eyebrow: "Amet elit sit  ·  Lorem",
-    title: "Amet elit sed eiusmod",
-    meta: "3 lorem  ·  180 ipsum  ·  Amet",
-    chips: ["Lorem", "Ipsum dolor"],
-  },
-  {
-    slug: "consectetur-adipiscing",
-    image: "/images/203_4471.png",
-    eyebrow: "Ipsum dolor  ·  CC-21",
-    title: "Consectetur adipiscing",
-    meta: "2 lorem  ·  120 ipsum  ·  Amet",
-    chips: ["Lorem", "Ipsum dolor"],
-  },
-  {
-    slug: "incididunt-ut-labore",
-    image: "/images/203_4490.png",
-    eyebrow: "Elit sit amet  ·  DD-34",
-    title: "Incididunt ut labore magna",
-    meta: "2 lorem  ·  120 ipsum  ·  Amet",
-    chips: ["Lorem", "Ipsum dolor"],
-  },
-  {
-    slug: "quis-nostrud-exercitation",
-    image: "/images/203_4509.png",
-    eyebrow: "Ut enim ad  ·  EE-45",
-    title: "Quis nostrud exercitation ullamco",
-    meta: "1 lorem  ·  60 ipsum  ·  Amet",
-    chips: ["Lorem", "Ipsum dolor"],
+    slug: "human-research-ai",
+    image: "/images/milano/course-human-research-ai.png",
+    eyebrow: "ECP Milano  ·  Human Research AI",
+    title: "Human Research AI",
+    meta: "Percorso  ·  Milano  ·  ECP",
+    chips: ["Human Research AI", "Milano"],
   },
 ] as const;
 
 export const benefits = [
   {
     index: "01",
-    title: "Lorem ipsum dolor",
-    body: "Amet consectetur adipiscing elit sed do eiusmod tempor.",
+    title: "ECP Milano",
+    body: "Preview di campus a Milano. L’offerta non esiste: è un template di lavoro.",
   },
   {
     index: "02",
-    title: "Sit amet elit",
-    body: "Incididunt ut labore et dolore magna aliqua enim.",
+    title: "Sede a Milano",
+    body: "Contesto Milano soltanto. Indirizzo e recapiti in pagina sono placeholder.",
   },
   {
     index: "03",
-    title: "Consectetur adipiscing",
-    body: "Ut enim ad minim veniam, quis nostrud exercitation.",
+    title: "Tre percorsi",
+    body: "Management AI, Product Design AI, Human Research AI. Stessi slug in home e catalogo.",
   },
   {
     index: "04",
-    title: "Elit sed eiusmod",
-    body: "Ullamco laboris nisi ut aliquip ex ea commodo.",
+    title: "Orientamento",
+    body: "Una sola CTA primaria del template: Parla con un orientatore.",
   },
 ] as const;
 
 export const stats = [
-  { label: "Lorem ipsum", note: "Dolor sit amet elit", value: "98%" },
-  { label: "Dolor amet", note: "Consectetur adipiscing", value: "24h" },
-  { label: "Sit elit", note: "Sed do eiusmod tempor", value: "1:1" },
+  { label: "Campus", note: "Contesto Milano", value: "ECP" },
+  { label: "Preview", note: "Offerta non attiva", value: "—" },
+  { label: "Percorsi", note: "Catalogo di prova", value: "AI" },
 ] as const;
 
 export const testimonials = [
   {
     quote:
-      "“Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.”",
-    author: "Lorem · Ipsum dolor",
+      "Placeholder. Nessuna recensione in questa preview di ECP Milano.",
+    author: "ECP Milano · preview",
   },
   {
     quote:
-      "“Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.”",
-    author: "Dolor · Sit amet elit",
+      "Placeholder. Nessuna testimonianza, prova sociale o esito dichiarato.",
+    author: "Milano · preview",
   },
 ] as const;
 
 export const faqs = [
   {
-    q: "Lorem ipsum dolor sit amet elit?",
-    a: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    q: "ECP Milano è un’offerta reale?",
+    a: "No. Questa è una preview di template per un campus a Milano. L’offerta non esiste.",
   },
   {
-    q: "Consectetur adipiscing elit sed do?",
-    a: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    q: "Quali corsi mostra questa preview?",
+    a: "Tre percorsi placeholder: Management AI, Product Design AI e Human Research AI. Gli slug coincidono tra home e catalogo.",
   },
   {
-    q: "Eiusmod tempor incididunt ut labore?",
-    a: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    q: "Dove si trova la sede in questa preview?",
+    a: "Il contesto è Milano. Indirizzo e recapiti nella sezione sede sono placeholder, non una sede attiva.",
   },
   {
-    q: "Magna aliqua ut enim ad minim?",
-    a: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    q: "Come si parla con un orientatore?",
+    a: "Il template tiene una sola CTA primaria: Parla con un orientatore. Non ci sono prezzi né prove sociali in questa preview.",
   },
   {
-    q: "Quis nostrud exercitation ullamco nisi?",
-    a: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem.",
+    q: "I colori di ECP Milano sono definitivi?",
+    a: "No. La palette bordeaux è di lavoro, derivata da un primario di preview, e verrà sostituita.",
   },
 ] as const;
 
 export const logosMobile = [
-  { src: "/images/193_129.png", alt: "Lorem partner logo 1" },
-  { src: "/images/193_130.png", alt: "Lorem partner logo 2" },
-  { src: "/images/193_131.png", alt: "Lorem partner logo 3" },
-  { src: "/images/193_133.png", alt: "Lorem partner logo 4" },
-  { src: "/images/193_134.png", alt: "Lorem partner logo 5" },
+  { src: "/images/milano/logo-mobile-1.png", alt: "ECP Milano partner placeholder 1" },
+  { src: "/images/milano/logo-mobile-2.png", alt: "ECP Milano partner placeholder 2" },
+  { src: "/images/milano/logo-mobile-3.png", alt: "ECP Milano partner placeholder 3" },
+  { src: "/images/milano/logo-mobile-4.png", alt: "ECP Milano partner placeholder 4" },
+  { src: "/images/milano/logo-mobile-5.png", alt: "ECP Milano partner placeholder 5" },
 ] as const;
 
 export const logosDesktop = [
-  { src: "/images/203_4528.png", alt: "Lorem partner logo 1" },
-  { src: "/images/203_4529.png", alt: "Lorem partner logo 2" },
-  { src: "/images/203_4530.png", alt: "Lorem partner logo 3" },
-  { src: "/images/203_4531.png", alt: "Lorem partner logo 4" },
-  { src: "/images/203_4532.png", alt: "Lorem partner logo 5" },
+  { src: "/images/milano/logo-desktop-1.png", alt: "ECP Milano partner placeholder 1" },
+  { src: "/images/milano/logo-desktop-2.png", alt: "ECP Milano partner placeholder 2" },
+  { src: "/images/milano/logo-desktop-3.png", alt: "ECP Milano partner placeholder 3" },
+  { src: "/images/milano/logo-desktop-4.png", alt: "ECP Milano partner placeholder 4" },
+  { src: "/images/milano/logo-desktop-5.png", alt: "ECP Milano partner placeholder 5" },
 ] as const;

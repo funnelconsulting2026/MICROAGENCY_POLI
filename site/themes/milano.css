@@ -1,0 +1,10 @@
+/* Preview palette derived from primary #7A2433. Not a brand book. */
+html[data-theme="milano"] {
+  --color-brand: #7A2433; /* derived from primary #7A2433 */
+  --color-brand-deep: #4E1520; /* derived from primary #7A2433 */
+  --color-brand-bar: #6E1F2C; /* derived from primary #7A2433 */
+  --color-brand-link: #8E3040; /* derived from primary #7A2433 */
+  --color-brand-wash: #8A3142; /* derived from primary #7A2433 */
+  --color-accent: #9A3D4E; /* derived from primary #7A2433 */
+  --color-on-brand-muted: #F3D5DA; /* derived from primary #7A2433 */
+}
