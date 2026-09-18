@@ -16,7 +16,7 @@ export function BannerCta() {
             </picture>
           </div>
           <a className="btn btn-light btn-block" href="#contatti">
-            Lorem ipsum dolor sit →
+            Parla con un orientatore →
           </a>
         </div>
       </div>

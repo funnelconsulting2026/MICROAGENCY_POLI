@@ -43,7 +43,7 @@ export function Hero() {
               eiusmod tempor.
             </p>
             <a className="link-arrow" href="#contatti">
-              Lorem ipsum dolor sit →
+              Parla con un orientatore →
             </a>
             <div className="hero-bottom">
               <a className="btn btn-whatsapp" href="https://wa.me/390000000000" rel="noopener noreferrer">

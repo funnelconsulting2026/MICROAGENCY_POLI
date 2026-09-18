@@ -8,7 +8,7 @@ type Props = {
   ctaLabel?: string;
 };
 
-export function SiteHeader({ ctaHref = "/#contatti", ctaLabel = "Lorem ipsum dolor" }: Props) {
+export function SiteHeader({ ctaHref = "/#contatti", ctaLabel = "Parla con un orientatore" }: Props) {
   const [open, setOpen] = useState(false);
 
   return (

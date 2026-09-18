@@ -75,7 +75,7 @@ export default async function CoursePage({ params }: Props) {
           </p>
           <div className="course-hero-actions">
             <a className="btn btn-ink" href="#contatti">
-              Lorem ipsum dolor sit <span aria-hidden="true">↘</span>
+              Parla con un orientatore <span aria-hidden="true">↘</span>
             </a>
             <a className="btn btn-whatsapp" href="https://wa.me/390000000000" rel="noopener noreferrer">
               <WhatsAppIcon />
