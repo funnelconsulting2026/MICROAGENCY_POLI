@@ -1,3 +1,7 @@
+# PREVIEW — ECP Milano placeholder
+
+This branch is a **preview**, not a live campus site. The offer does not exist. Do not treat GitHub Pages as the official site.
+
 # Lorem Ipsum — sito dal template Figma
 
 Sito Next.js (App Router) che riproduce tre landing del template. Tutti i testi visibili sono placeholder lorem. I JSON Figma e `assets/` restano intatti: le immagini usate sono copie in `site/public/images/`, oppure placeholder neutri se manca il node id.

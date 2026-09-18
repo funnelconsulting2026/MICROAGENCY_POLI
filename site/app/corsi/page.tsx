@@ -43,7 +43,7 @@ export default function CatalogPage() {
           </div>
           <div className="catalog-cta-actions">
             <a className="btn btn-ink" href="/#contatti">
-              Lorem ipsum dolor sit <span aria-hidden="true">↘</span>
+              Parla con un orientatore <span aria-hidden="true">↘</span>
             </a>
             <p className="catalog-cta-note">Lorem ipsum dolor sit amet elit</p>
           </div>
